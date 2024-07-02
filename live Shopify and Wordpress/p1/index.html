@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workspace</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <script src="https://kit.fontawesome.com/cd7bf0b008.js" crossorigin="anonymous"></script>
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        *,
+        ::after,
+        ::before {
+            box-sizing: border-box;
+        }
+
+        /* css for common */
+
+        .container{
+            width: 1420px;
+            margin: auto;
+        }
+
+        ul li {
+            margin: 0;
+            padding: 0;
+            list-style: none
+        }
+
+        /* css fro exp-cat */
+
+        #exp-cat {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: stretch;
+            width: 100%;
+            justify-content: space-between;
+            margin-left:0;
+        }
+
+        #exp-cat li {
+            width: calc(16.66% - 1px);
+            margin-top: 1px;
+            border-left: 1px solid #e7eaed;
+            position: relative;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        #exp-cat a {
+            display: block;
+            text-decoration: none;
+        }
+
+        #exp-cat a img {
+            max-height: 53px;
+            max-width: 64px;
+        }
+
+        #exp-cat a img,
+        #exp-cat a span {
+            display: block;
+            text-align: center;
+            margin: 0 auto;
+            text-decoration: none;
+            color: #11334f;
+            text-transform: uppercase;
+            transition: all .2s linear;
+            font-family: system-ui;
+        }
+
+        #exp-cat a span {
+            margin-top: 11px;
+        }
+
+        #exp-cat li:nth-child(7),
+        #exp-cat li:first-child {
+            border-left-width: 0;
+        }
+
+        #exp-cat li:nth-child(-n+6) {
+            border-bottom: 1px solid #e7eaed;
+        }
+
+        #exp-cat li:nth-child(-n+5):after {
+            content: "";
+            height: 7px;
+            width: 7px;
+            background: red;
+            display: block;
+            border-radius: 50%;
+            position: absolute;
+            bottom: -3px;
+            right: -5px;
+            z-index: 1;
+        }
+
+        /* css for responsive */
+
+        @media screen and (max-width: 767px) {
+            #exp-cat li {
+                width: calc(33.33% - 1px);
+            }
+
+            #exp-cat li:nth-child(-n+9) {
+                border-bottom: 1px solid #e7eaed;
+            }
+
+            #exp-cat li:nth-child(7),
+            #exp-cat li:first-child,
+            #exp-cat li:nth-child(4),
+            #exp-cat li:nth-child(10) {
+                border-left-width: 0;
+            }
+
+            #exp-cat li:nth-child(-n+11)::after {
+                content: '';
+                height: 7px;
+                width: 7px;
+                background: red;
+                display: block;
+                border-radius: 50%;
+                position: absolute;
+                bottom: -3px;
+                right: -5px;
+                z-index: 1;
+            }
+
+            #exp-cat li:nth-child(3)::after,
+            #exp-cat li:nth-child(6)::after,
+            #exp-cat li:nth-child(9)::after,
+            #exp-cat li:nth-child(10)::after,
+            #exp-cat li:nth-child(11)::after {
+                display: none;
+            }
+        }
+
+        @media screen and (max-width: 1200px) {
+            .container {
+                max-width: 100%;
+            }
+        }
+
+        @media (max-width: 991px) {
+            .container {
+                max-width: 100%;
+            }
+        }
+
+        /* css done */
+    </style>
+
+</head>
+
+<body>
+    <!-- html for section -->
+    <section>
+        <div class="container">
+            <div class="cutom-html-content">
+                <ul id="exp-cat">
+                    <li>
+                        <a href="/collections/sofas">
+                            <img src="https://cdn.shopify.com/s/files/1/0286/1072/3980/files/sofas.jpg?v=1577342123"
+                                alt="Sofas" class="lazypreload lazyloaded">
+                            <span>Sofas</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/collections/bedroom-1">
+                            <img src="https://cdn.shopify.com/s/files/1/0286/1072/3980/files/beds.jpg?v=1577342123"
+                                alt="Beds" class="lazypreload lazyloaded">
+                            <span>Beds</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/collections/dining-room">
+                            <img src="https://cdn.shopify.com/s/files/1/0286/1072/3980/files/dining.jpg?v=1577342123"
+                                alt="Dining" class="lazypreload lazyloaded">
+                            <span>Dining</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/collections/tv-units">
+                            <img src="https://cdn.shopify.com/s/files/1/0286/1072/3980/files/tv-units.jpg?v=1577342123"
+                                alt="Tv Units" class="lazypreload lazyloaded">
+                            <span>Tv Units</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/collections/dressers">
+                            <img src="https://cdn.shopify.com/s/files/1/0286/1072/3980/files/dresser.png?v=1649927622"
+                                alt="Dressers" class="lazypreload lazyloaded">
+                            <span>Dressers</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/">
+                            <img src="https://cdn.shopify.com/s/files/1/0286/1072/3980/files/seating.jpg?v=1577342123"
+                                alt="Seating" class="lazypreload lazyloaded">
+                            <span>Seating</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/collections/coffee-table">
+                            <img src="https://cdn.shopify.com/s/files/1/0286/1072/3980/files/coffee-tables.jpg?v=1577342123"
+                                alt="Coffee Tables" class="lazypreload lazyloaded">
+                            <span>Coffee Tables</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/collections/wardrobes">
+                            <img src="https://cdn.shopify.com/s/files/1/0286/1072/3980/files/cupboards.jpg?v=1577342123"
+                                alt="Cupboards" class="lazypreload lazyloaded">
+                            <span>Cupboards</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/collections/sideboards">
+                            <img src="https://cdn.shopify.com/s/files/1/0286/1072/3980/files/storage.jpg?v=1577342123"
+                                alt="Storage" class="lazypreload lazyloaded">
+                            <span>Storage</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/collections/study-room">
+                            <img src="https://cdn.shopify.com/s/files/1/0286/1072/3980/files/study.jpg?v=1577342123"
+                                alt="Study" class="lazypreload lazyloaded">
+                            <span>Study</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/collections/bookshelves">
+                            <img src="https://cdn.shopify.com/s/files/1/0286/1072/3980/files/bookshelves.png?v=1649927783"
+                                alt="Bookshelves" class="lazypreload lazyloaded">
+                            <span>Bookshelves</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/collections">
+                            <img src="https://cdn.shopify.com/s/files/1/0286/1072/3980/files/all-furniture.jpg?v=1577342123"
+                                alt="All Furniture" class="lazypreload lazyloaded">
+                            <span>All Furniture</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- html done -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+</body>
+
+</html>
+

@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sofani</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        img {
+            width: 100%;
+            vertical-align: middle;
+        }
+
+        .container{
+            width: 100% !important;
+        }
+
+        /* css for section 1 */
+
+        .u_section_1 {
+            position: relative;
+        }
+
+        .u_section_1 .u_section_1_content {
+            position: absolute;
+            left: 4%;
+            top: 5%;
+        }
+
+        .u_section_1_content p {
+            margin: 30px 0;
+        }
+
+        .u_section_1_content a {
+            text-decoration: none;
+            padding: 10px 25px;
+            font-size: 15px;
+            font-weight: 700;
+            font-family: sans-serif;
+            letter-spacing: 3px;
+        }
+
+        .u_section_1_content .u_section_1_heading {
+            font-size: 35px;
+            margin: 20px 0;
+            font-family: sans-serif;
+            font-weight: 800;
+        }
+
+        .u_section_1_content .u_section_1_btn_1 {
+            color: white;
+            letter-spacing: 3px;
+            background-color: black;
+        }
+
+        .u_section_1_content .u_section_1_btn_2 {
+            color: black;
+            background-color: transparent;
+            border: 1px solid black;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .u_section_1 img {
+                width: 100%;
+                height: 80vh;
+            }
+        }
+
+        @media only screen and (max-width: 425px) {
+
+            .u_section_1 {
+                text-align: center !important;
+            }
+
+            .u_section_1 img {
+                width: 100%;
+                height: 80vh;
+            }
+
+            .u_section_1_heading {
+                font-size: 25px !important;
+            }
+
+            .u_section_1_btn_1 {
+                font-size: 10px !important;
+            }
+
+            .u_section_1_btn_2 {
+                font-size: 10px !important;
+            }
+        }
+
+        /* css for section 2 */
+
+        .u_section_2 {
+            position: relative;
+        }
+
+        .u_section_2 .u_section_2_content {
+            position: absolute;
+            left: 12%;
+            top: 5%;
+            width: 25%;
+            text-align: -webkit-center;
+        }
+
+        .u_section_2_content .u_section_2_para {
+            font-size: 35px;
+            font-weight: 900;
+            font-family: sans-serif;
+        }
+
+        .u_section_2_content a {
+            display: block;
+            margin: 20px 0;
+            width: 80%;
+            line-height: 16px;
+            text-decoration: none;
+            padding: 10px 25px;
+            font-size: 15px;
+            font-weight: 700;
+            font-family: sans-serif;
+            letter-spacing: 3px;
+        }
+
+        .u_section_2_content .u_section_2_btn_1 {
+            margin: 30px 0;
+            color: white;
+            text-align: center;
+            letter-spacing: 3px;
+            background-color: black;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .u_section_2_content {
+                width: 75% !important;
+            }
+
+            .u_section_2 img {
+                width: 100%;
+                height: 100vh;
+            }
+
+            .u_section_2_para {
+                font-size: 20px !important;
+            }
+
+            .u_section_2_btn_1 {
+                font-size: 10px !important;
+                margin: 20px 0 !important;
+            }
+        }
+
+        @media only screen and (max-width: 425px) {
+
+            .u_section_2_content {
+                width: 75% !important;
+            }
+
+            .u_section_2 img {
+                width: 100%;
+                height: 100vh;
+            }
+
+            .u_section_2_para {
+                font-size: 20px !important;
+            }
+
+            .u_section_2_btn_1 {
+                font-size: 10px !important;
+                margin: 20px 0 !important;
+            }
+        }
+
+        /* css for section 3 */
+
+        .u_section_3 {
+            position: relative;
+
+        }
+
+        .u_section_3 .u_section_3_content {
+            position: absolute;
+            width: 30%;
+            right: 2%;
+            top: 10%;
+            text-align: -webkit-right;
+        }
+
+        .u_section_3_content a {
+            text-decoration: none;
+            padding: 10px 25px;
+            font-size: 15px;
+            font-weight: 700;
+            font-family: sans-serif;
+            letter-spacing: 3px;
+        }
+
+        .u_section_3_content .u_section_3_heading {
+            font-size: 35px;
+            margin: 20px 0;
+            font-family: sans-serif;
+            font-weight: 800;
+        }
+
+        .u_section_3_content .u_section_3_btn_1 {
+            margin: 10px 0;
+            color: white;
+            letter-spacing: 3px;
+            background-color: black;
+        }
+
+        .u_section_3 span {
+            position: absolute;
+            bottom: 2%;
+            left: 2%;
+        }
+
+        .u_section_3 span a {
+            color: white;
+            font-size: 20px;
+            font-weight: 800;
+            text-decoration: none;
+            letter-spacing: 3px;
+            font-family: sans-serif;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .u_section_3 img {
+                height: 100vh;
+            }
+
+            .u_section_3_content {
+                position: absolute !important;
+                top: 10% !important;
+                text-align: center !important;
+                width: 100% !important;
+                right: 0% !important;
+            }
+
+            .u_section_3_heading {
+                font-size: 25px !important;
+                width: 60%;
+                margin: auto !important;
+                margin-bottom: 20px !important;
+            }
+
+            .u_section_3_btn_1 {
+                font-size: 10px !important;
+            }
+
+            .u_section_3 span {
+                position: absolute;
+                bottom: 2%;
+                left: 0;
+                width: 100%;
+                text-align: center;
+            }
+
+            .u_section_3 span a {
+                font-size: 10px !important;
+            }
+        }
+
+        @media only screen and (max-width: 425px) {
+            .u_section_3 img {
+                height: 100vh;
+            }
+
+            .u_section_3_content {
+                position: absolute !important;
+                top: 10% !important;
+                text-align: center !important;
+                width: 100% !important;
+                right: 0% !important;
+            }
+
+            .u_section_3_heading {
+                font-size: 25px !important;
+                width: 60%;
+                margin: auto !important;
+                margin-bottom: 20px !important;
+            }
+
+            .u_section_3_btn_1 {
+                font-size: 10px !important;
+            }
+
+            .u_section_3 span {
+                position: absolute;
+                bottom: 2%;
+                left: 0;
+                width: 100%;
+                text-align: center;
+            }
+
+            .u_section_3 span a {
+                font-size: 10px !important;
+            }
+        }
+
+        /* csss for section 4 */
+
+        .u_section_4 {
+            display: flex;
+        }
+
+        .u_section_4 .u_section_left {
+            width: 50%;
+            background-image: url(https://cb.scene7.com/is/image/Crate/cb_dHP_20230102_CrateKitchen_Portrait?wid=720&qlt=80);
+            background-position: bottom;
+        }
+
+        .u_section_left_content {
+            text-align: center;
+            padding: 35% 0;
+        }
+
+        .u_section_left_content .u_p1 {
+            font-size: 16px;
+            letter-spacing: 2px;
+            font-family: sans-serif;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        .u_section_left_content .u_p2 {
+            font-size: 30px;
+            font-family: sans-serif;
+            font-weight: 900;
+            width: 50%;
+            margin: auto;
+            margin-top: 30%;
+        }
+
+        .u_section_left_content .u_p3 {
+            font-size: 18px;
+            width: 50%;
+            margin: auto;
+            font-family: monospace;
+            margin-top: 20px;
+        }
+
+        .u_section_4 .u_section_right {
+            width: 50%;
+        }
+
+        .u_section_4 .u_section_right video {
+            width: 100%;
+            height: 100%;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .u_section_4 {
+                display: flex;
+                flex-direction: column-reverse;
+            }
+
+            .u_section_right {
+                width: 100% !important;
+            }
+
+            .u_section_left {
+                width: 100% !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Section 1 -->
+
+        <section>
+            <div class="u_section_1">
+                <img src="https://cb.scene7.com/is/image/Crate/cb_dHP_20230103_Hero?wid=1440&qlt=90&op_sharpen=1"
+                    alt="">
+                <div class="u_section_1_content">
+                    <h1 class="u_section_1_heading">find your forever everything </h1>
+                    <p><a href="" class="u_section_1_btn_1">CREATE YOUR REGISTRY </a></p>
+                    <p><a href="" class="u_section_1_btn_2">SHOP MOST-LOVED GIFTS </a></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- section 2 -->
+
+        <section>
+            <div class="u_section_2">
+                <img src="https://cb.scene7.com/is/image/Crate/cb_dHP_20230102_Partyslate?wid=1440&qlt=90&op_sharpen=1"
+                    alt="">
+                <div class="u_section_2_content">
+                    <p class="u_section_2_para">When the most important day of your life is also the
+                        most beautiful. Get wedding inspo from our friends at PartySlate.</p>
+                    <a href="" class="u_section_2_btn_1">SHOP WEDDING TRENDS </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- section 3 -->
+
+        <section>
+            <div class="u_section_3">
+                <img src="https://cb.scene7.com/is/image/Crate/cb_dHP_20230102_SectionalV2?wid=1440&qlt=80&op_sharpen=1"
+                    alt="">
+                <div class="u_section_3_content">
+                    <h1 class="u_section_3_heading"> introducing the Oceanside collection </h1>
+                    <a href="" class="u_section_3_btn_1">shop sofas & sectionals </a>
+                </div>
+                <span><a href="">Shop all in-stock furniture &#8594</a></span>
+            </div>
+        </section>
+
+        <!-- section 4 -->
+
+        <section>
+            <div class="u_section_4">
+                <div class="u_section_left">
+                    <div class="u_section_left_content">
+                        <p class="u_p1">@ halfbakedharvest </p>
+                        <p class="u_p2">pesto alla vodka stuffed shells </p>
+                        <p class="u_p3">If manicotti were in shell form and easier to make, you'd get these cheesy
+                            stuffed
+                            shells &#8594</p>
+                    </div>
+                </div>
+                <div class="u_section_right">
+                    <video src="https://s7d5.scene7.com/is/content/Crate/Video/cb_dHP_20230102_CrateKitchenVideo.mp4"
+                        controls></video>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

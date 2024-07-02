@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/cd7bf0b008.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        @media screen and (max-width: 641px) {
+            .AnnouncementBar {
+                font-size: calc(var(--base-text-font-size) - (var(--default-text-font-size) - 11px));
+            }
+            .AnnouncementBar__Wrapper{
+                display: none;
+            }
+            .AnnouncementBar_left_menu{
+                width: 50%;
+            }
+            .AnnouncementBar_right_menu{
+                width: 50%;
+            }
+        }
+
+        ul{
+            list-style: none;
+        }
+
+        .AnnouncementBar {
+            position: relative;
+            text-align: center;
+            font-size: calc(var(--base-text-font-size) - (var(--default-text-font-size) - 10px));
+            z-index: 1;
+            background: #e92172;
+            color: #ffffff;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .AnnouncementBar_padding {
+            padding: 12px 15px;
+        }
+
+        .announcement_Heading{
+          font-family: system-ui;
+              color: #ffffff;
+        }
+
+        .AnnouncementBar_right_menu i{
+            padding: 0 5px;
+              color: #ffffff;
+        }
+        .AnnouncementBar_right_menu a{
+            text-decoration: none;
+            color: #ffffff;
+        }
+        .AnnouncementBar_left_menu a{
+            text-decoration: none;
+            color: #ffffff;
+        }
+        .AnnouncementBar_left_menu i{
+            padding: 0 5px;
+              color: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="AnnouncementBar">
+        <div class="AnnouncementBar_left_menu common-width AnnouncementBar_padding announcement_Heading">
+            <ul>
+                <li><i class="fa-solid fa-store"></i><a href="">Become a Franchise</a></li>
+            </ul>
+        </div>
+        <div class="AnnouncementBar__Wrapper common-width AnnouncementBar_padding announcement_Heading">
+            <p class="AnnouncementBar__Content Heading">Helpline ✆+91-9352449554 | ✉ Hello@sofani.co
+            </p>
+        </div>
+        <div class="AnnouncementBar_right_menu common-width AnnouncementBar_padding announcement_Heading">
+            <ul>
+                <li><i class="fa-solid fa-truck"></i><a href="">Track Your Order</a></li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+
+</html>
